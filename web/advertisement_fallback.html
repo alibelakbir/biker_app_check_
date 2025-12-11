@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biker App - Advertisement</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: #667eea;
+            border-radius: 20px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .download-btn {
+            background: #667eea;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 600;
+            margin: 10px;
+            transition: transform 0.2s;
+        }
+        .download-btn:hover {
+            transform: translateY(-2px);
+        }
+        .store-buttons {
+            margin-top: 20px;
+        }
+        .store-btn {
+            display: inline-block;
+            margin: 10px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🏍️</div>
+        <h1>Biker App</h1>
+        <p>View this advertisement in the Biker App for the best experience!</p>
+        
+        <div class="store-buttons">
+            <a href="#" class="download-btn" id="openApp">Open in App</a>
+        </div>
+        
+        <p style="margin-top: 30px; font-size: 14px; color: #999;">
+            Don't have the app? Download it now:
+        </p>
+        
+        <div class="store-buttons">
+            <a href="https://apps.apple.com/app/biker-app" class="store-btn">
+                <img src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" alt="Download on the App Store" height="40">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.bikerapp.ma" class="store-btn">
+                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" height="40">
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Try to open the app first
+        document.getElementById('openApp').addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Get URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const adId = urlParams.get('ad_id');
+            const type = urlParams.get('type');
+            
+            // Try to open the app with deep link
+            const deepLink = `bikerapp://advertisement?ad_id=${adId}&type=${type}`;
+            
+            // Attempt to open the app
+            window.location.href = deepLink;
+            
+            // Fallback: redirect to app store after a short delay
+            setTimeout(function() {
+                // Detect platform and redirect accordingly
+                if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+                    window.location.href = 'https://apps.apple.com/app/biker-app';
+                } else {
+                    window.location.href = 'https://play.google.com/store/apps/details?id=com.bikerapp.ma';
+                }
+            }, 2000);
+        });
+        
+        // Auto-attempt to open app when page loads
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const adId = urlParams.get('ad_id');
+            const type = urlParams.get('type');
+            
+            if (adId) {
+                const deepLink = `bikerapp://advertisement?ad_id=${adId}&type=${type}`;
+                window.location.href = deepLink;
+            }
+        };
+    </script>
+</body>
+</html>

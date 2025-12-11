@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "biker-37025",
+    "staging": "biker-37025"
+  },
+  "targets": {},
+  "etags": {}
+}

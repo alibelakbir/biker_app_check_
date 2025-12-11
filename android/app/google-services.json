@@ -1,0 +1,166 @@
+{
+  "project_info": {
+    "project_number": "642689408822",
+    "project_id": "biker-37025",
+    "storage_bucket": "biker-37025.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642689408822:android:ba05494d71a6fc31ccdd97",
+        "android_client_info": {
+          "package_name": "com.bikerapp.ma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "642689408822-3r8dcs6rael7a7gl6kpkhh6gm2mhijbr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bikerapp.ma",
+            "certificate_hash": "5b42cd6e2ade0f5833469bbf262a4a4f365d24a7"
+          }
+        },
+        {
+          "client_id": "642689408822-p1b2nl7emb987a9tka8hrc1sr8c45tb6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bikerapp.ma",
+            "certificate_hash": "74ccfc9d930dff8281c36a1c0f064f4ce4f24fc3"
+          }
+        },
+        {
+          "client_id": "642689408822-p6gi03jlc6dqe4u5m4vbto3otb6c78g5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSPm74rH54JsW2sHe_4SjvEVAzDW-IL9o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "642689408822-p6gi03jlc6dqe4u5m4vbto3otb6c78g5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "642689408822-6j2bjv46agdd4u9nos3nes849ttapc11.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.biker.app"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642689408822:android:7bc41ec0c3772b64ccdd97",
+        "android_client_info": {
+          "package_name": "ma.biker.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "642689408822-1emt39losnv2a06tlj54u2utsufie1su.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ma.biker.app",
+            "certificate_hash": "74ccfc9d930dff8281c36a1c0f064f4ce4f24fc3"
+          }
+        },
+        {
+          "client_id": "642689408822-uj0rgrtb6an4b76h6o4olo8tgqksn8nu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ma.biker.app",
+            "certificate_hash": "4ba3680c239149e82e3b47560ac7899ed7056487"
+          }
+        },
+        {
+          "client_id": "642689408822-p6gi03jlc6dqe4u5m4vbto3otb6c78g5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSPm74rH54JsW2sHe_4SjvEVAzDW-IL9o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "642689408822-p6gi03jlc6dqe4u5m4vbto3otb6c78g5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "642689408822-6j2bjv46agdd4u9nos3nes849ttapc11.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.biker.app"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642689408822:android:464aeff60c5166c4ccdd97",
+        "android_client_info": {
+          "package_name": "ma.biker.solution"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "642689408822-o8iqp7isfn2c5rv7jurgeu36mdc4v66q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ma.biker.solution",
+            "certificate_hash": "74ccfc9d930dff8281c36a1c0f064f4ce4f24fc3"
+          }
+        },
+        {
+          "client_id": "642689408822-ovsmmofbseppoude2qflmgr092evak79.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ma.biker.solution",
+            "certificate_hash": "5b42cd6e2ade0f5833469bbf262a4a4f365d24a7"
+          }
+        },
+        {
+          "client_id": "642689408822-p6gi03jlc6dqe4u5m4vbto3otb6c78g5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSPm74rH54JsW2sHe_4SjvEVAzDW-IL9o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "642689408822-p6gi03jlc6dqe4u5m4vbto3otb6c78g5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "642689408822-6j2bjv46agdd4u9nos3nes849ttapc11.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.biker.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
