@@ -1,0 +1,47 @@
+name: Deploy to Google Play Beta
+
+on:
+  push:
+    branches:
+      - main    # deploy on push to main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'   # Match your Android/Gradle config if different
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.35.0'   # or specific version like '3.24.0'
+
+      - name: Get Flutter packages
+        run: flutter pub get
+
+      # Optional: run tests before building
+      # - name: Run tests
+      #   run: flutter test
+
+      - name: Build Android app bundle
+        run: flutter build appbundle --release
+
+      # AAB should now be at:
+      # build/app/outputs/bundle/release/app-release.aab
+
+      - name: Upload to Google Play internal/beta
+        uses: r0adkll/upload-google-play@v1
+        with:
+          serviceAccountJsonPlainText: ${{ secrets.PLAY_SERVICE_ACCOUNT_JSON }}
+          packageName: com.bikerapp.ma   # TODO: replace with real package id
+          releaseFiles: build/app/outputs/bundle/release/app-release.aab
+          track: internal    # or 'beta' if you prefer that track
+          status: completed
