@@ -1,4 +1,4 @@
-import 'package:biker_app/app/modules/Congratulations_page.dart';
+import 'package:biker_app/app/modules/congratulations_page.dart';
 import 'package:biker_app/app/modules/notification_module/notification_binding.dart';
 import 'package:biker_app/app/modules/notification_module/notification_page.dart';
 import 'package:biker_app/app/modules/filter_module/filter_page.dart';
