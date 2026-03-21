@@ -34,7 +34,7 @@ jobs:
       - name: Build Android app bundle
         run: flutter build appbundle --release
 
-      # AAB should now be at:
+      # AAB should now be at (unsigned):
       # build/app/outputs/bundle/release/app-release.aab
 
       - name: Upload to Google Play internal/beta
